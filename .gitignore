@@ -1,0 +1,29 @@
+pids
+logs
+node_modules
+example/node_modules
+
+npm-debug.log*
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# misc
+.DS_Store
+
+# umi
+.umi
+.umi-production
+
+npm-debug.log
+coverage/
+run
+dist
+public
+.DS_Store
+.nyc_output
+.basement
+config.local.js
+.docz
+lib
+es

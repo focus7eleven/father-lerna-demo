@@ -1,0 +1,13 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    "no-submodule-imports": false,
+    "no-bitwise": false,
+    "ordered-imports": [false],
+    "object-literal-sort-keys": [false],
+    "member-access": false,
+    "jsx-no-lambda": false,
+    "jsx-boolean-value": false,
+    "interface-name" : [true, "never-prefix"]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "scripts": {
+    "init": "rm -rf node_modules && tnpm install && lerna clean -y && tnpm run bootstrap && tnpm run build",
+    "bootstrap": "lerna bootstrap --npm-client tnpm",
+    "start": "tnpm run dev",
+    "dev": "father doc dev",
+    "dev:umi": "VERSION=UMI father doc dev",
+    "build": "father build",
+    "pub": "tnpm run bootstrap && ali-contributors && tnpm run build && node ./scripts/publish.js",
+    "pub-beta": "tnpm run bootstrap && ali-contributors && tnpm run build && node ./scripts/publish.js --npm-tag=beta"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "peerDependencies": {
+    "react": "16",
+    "react-dom": "16"
+  },
+  "devDependencies": {
+    "father": "^2.20.0",
+    "lerna": "^2.11.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "umi-ui-theme": "^1.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "install-alinode": "4"
+  },
+  "ci": {
+    "version": "alinode=4"
+  }
+}
