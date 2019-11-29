@@ -8,6 +8,6 @@
     "member-access": false,
     "jsx-no-lambda": false,
     "jsx-boolean-value": false,
-    "interface-name" : [true, "never-prefix"]
+    "interface-name": [true, "never-prefix"]
   }
 }

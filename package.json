@@ -19,9 +19,11 @@
   },
   "devDependencies": {
     "father": "^2.20.0",
-    "lerna": "^2.11.0",
+    "father-doc": "^1.0.0-alpha.0",
+    "lerna": "^3.19.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "typescript": "^3.7.2",
     "umi-ui-theme": "^1.0.0"
   },
   "husky": {
@@ -40,5 +42,6 @@
   },
   "ci": {
     "version": "alinode=4"
-  }
+  },
+  "name": "father-lerna-demo"
 }

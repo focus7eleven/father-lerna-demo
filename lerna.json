@@ -1,13 +1,7 @@
 {
-  "lerna": "2.11.0",
   "packages": [
     "packages/*"
   ],
-  "command": {
-    "publish": {
-      "allowBranch": "master"
-    }
-  },
   "npmClient": "tnpm",
   "version": "independent"
 }

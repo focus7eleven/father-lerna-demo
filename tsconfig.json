@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+      { "path": "./packages/oneapi-ui-doc" },
+      { "path": "./packages/oneapi-ui-editor" }
+  ]
+}
